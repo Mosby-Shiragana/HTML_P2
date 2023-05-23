@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freaking out</title>
+    <style>
+        .flex-container{display: flex; background-color: gold;height: 200px;}
+        .flex-container>div{width: 100px;margin: 10px;text-align: center;line-height: 75px;font-size: 30px; color: white; background-color: orange;}
+    </style>
+</head>
+<body>
+    <h1>align-self</h1>
+    <p>The align-self flex-start  выравнивает выбранный гибкий элемент в верхней части контейнера</p>
+    <p>The align-self flex-end выравнивает выбранный гибкий элемент в нижней части контейнера</p>
+    <div class="flex-container">
+        <div>1</div>
+        <div style="align-self: flex-start;">2</div>
+        <div style="align-self: flex-end;">3</div>
+        <div>4</div>
+    </p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text in image</title>
+    <style>
+    .container{position:relative;}
+    .topleft{position: absolute;top: 8px;left: 16px;font-size: 30px;}
+    img{ width:100%;height: auto;opacity: 0,3;}
+    @font-face {font-family:Kakoi; src: url(beer-money12.ttf);}
+    body{height:100%;font-family: Kakoi; background: rgb(198, 55, 115);background:radial-gradient(circle, rgba(198, 55, 115)3%,rgb(252, 70, 70)100% );}
+    img.one{width: auto;height: auto;}/*Стандарт*/
+    img.two{height: 50%;width: 50%;}/*Заданые параметры для картинки*/
+    /*Первая картинка реагирует на смену размера окна и экрана, а вторая нет*/
+    </style>
+</head>
+<body>
+    <h2>Image text example</h2>
+    <p>left angle text example</p>
+    <div class="container">
+        <img class="two" src="chainsaw-man-denji-minimalist-wallpaper-3554x1999-79215_53.jpg" width="1000" height="300">
+        <div class="topleft">Chainsaw Man</div>
+    </div>
+    <div class="container">
+        <img class="one" src="chainsaw-man-denji-minimalist-wallpaper-3554x1999-79215_53.jpg" width="1000" height="300">
+        <div style="font-size: 300px;" class="topleft">Chainsaw Man</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almost</title>
+    <style>
+        *{box-sizing: border-box;}
+        /*Стииль верхней панели навигации*/
+        .topnav{overflow: hidden;background-color: aquamarine;}/*Стиль верхних навигационных ссылок*/
+        .topnav a {float: left;display: block;color: gold;text-align: center;padding: 14px 16px;text-decoration: none;}/*Изменение цвета при наведении*/
+        .topnav a:hover{background-color: pink;color: black;}/*На экранах шириной 600пкс или меньше, ссылки меню укладываются друг на друга, а не рядом друг с другом*/
+        @media screen and (max-width: 600px){.topnav a{float: none;width: 100%;}}
+    </style>
+</head>
+<body>
+    <h2>Adaptive Navigation menu</h2>
+    <p>Измениите размер окна браузера, чтобы увидеть эффект: Когда экран меньше 600пкс, меню будет отображаться вертикально, а не горизонтально</p>
+    <div class="topnav">
+        <a href="https://animeliryca.com/suzuki-masayuki-giri-giri/">Link1</a>
+        <a href="https://animeliryca.com/lisa-shirogane/">Link2</a>
+        <a href="https://animeliryca.com/suzuki-masayuki-love-is-show/">Link3</a>
+    </div>
+</body>
+</html>

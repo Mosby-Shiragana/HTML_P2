@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow set</title>
+    <style>
+        div.hide{background-color: aquamarine;overflow: hidden;border: black 2px solid;width: 200px;height: 65px;}
+        div.show{background-color: gold;overflow: visible;border: orange 2px solid;width: 200px;height: 65px;margin-top: 25px;}
+        div.younger{background-color: pink;overflow: scroll;border: black 2px solid;width: 200px;height: 65px;margin-top: 25px;}
+        div.elder{background-color: green;overflow-x:hidden;overflow-y: scroll;border: red 2px solid;width: 200px;height: 65px;margin-top: 25px;}
+    </style>
+</head>
+<body>
+    <h2>Overflow Hidden</h2>
+    <p>When set overflow is on hidden, overfow is getting cut,else is become hidden</p>
+    <p>When set overflow is on visible, overfow is getting through container,and will not become hidden</p>
+    <p>When set overflow is on scroll, overfow is getting a scroll bars to navigate all container text,some part is stays hidden until scrolling a bar</p>
+    <div class="hide">You can use overflow set when you need to control your maket better. This text will be lost at any time, if it's set hidden.</div>
+    <div class="show">You can use overflow set when you need to control your maket better. This text will be shown at any time.</div>
+    <div class="younger">You can use overflow set when you need to control your maket better. This text will be lost at any time until scroll.</div>
+    <div class="elder">You can use overflow set when you need to control your maket better. This text will be lost at any time, if it's set hidden.</div>
+</body>
+</html>

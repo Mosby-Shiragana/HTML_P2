@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Breakfast</title>
+    <style>
+        .example{padding: 20px;color: white;}/*Очень маленькие устройства(телефоны,600пкс и ниже)*/
+        @media only screen and (min-width:600px) and (max-width: 768px) {.example{background-color: crimson;}}/*600px and more*/
+        @media only screen and (min-width:768px) and (max-width: 992px) {.example{background-color: greenyellow;}}/*768px and more*/
+        @media only screen and (min-width:992px) and (max-width: 1024px) {.example{background-color: aqua;}}/*992px and more*/
+        @media only screen and (min-width:1024px) and (max-width: 1200px) {.example{background-color: gold;}}/*1200px and more*/
+        @media only screen and (min-width:1200px) and (max-width: 1440px) {.example{background-color: pink;}}
+        </style>
+</head>
+<body>
+    <h1>CSS replyable media requests of a cut point</h1>
+    <p class="example">Change size of a browser window to see how this paragraph changing his color</p>
+    
+</body>
+</html>

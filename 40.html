@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Killer Grid</title>
+    <style>
+        .grid-container{display: grid;grid-template-columns: auto auto auto;background: rgb(198, 55, 115);background:radial-gradient(circle, rgba(198, 55, 115)3%,rgb(252, 70, 70)100% );padding: 10px;}
+        .grid-item{background: rgba(255, 215, 0);background:radial-gradient(circle, rgba(255, 215, 0)3%,rgb(255, 165, 0) 100% );border: orange 2px solid;padding: 20px; font-size: 30px;text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>Grid web</h1>
+    <p>Макет сетки должен иметь родительский элемент  со свойством<em>display</em>, установленным в<em>grid</em> или<em>inline-grid</em>.</p>
+    <p>Прямые дочерние элементы контейнера сетки автоматически становятся элементами сетки</p>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+</body>
+</html>

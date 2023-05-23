@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is it really over?</title>
+    <style>
+        .grid-container{display: grid;grid-template-columns: auto auto auto auto auto auto;gap: 10px;padding: 10px; background: rgba(255, 215, 0);background:radial-gradient(circle, rgba(255, 215, 0)3%,rgb(255, 165, 0) 100% );}
+        .grid-container>div{background: rgb(198, 55, 115);background:radial-gradient(circle, rgba(198, 55, 115)3%,rgb(252, 70, 70)100% );text-align: center;padding: 20px 0;font-size: 30px;}
+        .item1{grid-column: 1/span 3;}
+        .item7{grid-column: 7/9;}
+    </style>
+</head>
+<body>
+    <h1>The grid-column property</h1>
+    <p>USe the <em>grid-column</em> to specify where to place an item</p>
+    <p>Item1 and Item7 are having a unique position here.</p>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+        <div class="item13">13</div>
+        <div class="item14">14</div>
+        <div class="item15">15</div>
+    </div>
+</body>
+</html>
